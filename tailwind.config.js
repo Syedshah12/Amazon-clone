@@ -16,7 +16,8 @@ export default {
          "light-orangish":"#FEBD69",
          "dark-orangish":"#F3A847",
          "light-bluish" :"#232F3E",
-         "light-gray":"#E3E6E6"
+         "light-gray":"#E3E6E6",
+         "red_darkish":"#CC0C39"
       }
     },
   },

@@ -17,6 +17,7 @@ import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa6";
 import Card from './Card'
 import Card2 from './Card2'
+import SlideScrollBar from './SlideScrollBar'
 
 
 const obj ={first:dining,second:kitchen,third:home,fourth:health};
@@ -34,13 +35,14 @@ const Test = () => {
             
 
   return (
-    <div className=' h-screen flex flex-col bg-cover bg-center transition-all ease-out duration-500'  style={{ backgroundImage: `url(${slides[curr]})` }}>
+
+    <div className=' h-screen  flex flex-col bg-cover bg-center transition-all ease-out duration-500'  style={{ backgroundImage: `url(${slides[curr]})` }}>
 <div className=' flex justify-between  '>
 <div onClick={next} className='w-10 h-40 hover:border border-black flex items-center cursor-pointer'><FaChevronLeft color='black' size={40} /></div>
     <div onClick={prev} className='w-10 h-40 hover:border border-black flex items-center cursor-pointer'><FaChevronRight color='black'  size={40}/></div>
 
 </div>
- <div className='mt-8 bg-gradient-to-b from-transparent via-slate-200 to-light-gray  grid gap-4 px-4 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 '>
+ <div className='   mt-8  bg-gradient-to-b from-transparent via-slate-200 to-light-gray  grid gap-4 px-4 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 '>
 <Card {...obj2} />
 <Card2 src={cpu}/>
 <Card2 src={stuftoys}/>
@@ -49,8 +51,15 @@ const Test = () => {
 <Card {...obj2} />
 <Card2 src={stuftoys}/>
 <Card2 src={cpu}/>
+
  </div>
+ 
+ <div className=''>
+<SlideScrollBar/>
+ </div>
+
     </div>
+ 
   )
 }
 

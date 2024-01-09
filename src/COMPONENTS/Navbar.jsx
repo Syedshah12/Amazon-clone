@@ -210,8 +210,8 @@ const Navbar = () => {
 
                   </div>
                   <div className='flex flex-col items-center p-2 gap-2'>
-                    <button className='px-24 py-1 text-center rounded-md  mx-auto bg-goldish'>Sign in</button>
-                    <p className='text-xs leading-tight text-white'>New Customer?<span className='text-xs hover:underline text-blue-700'>Start Here.</span></p>
+                    <a href='/signin' className='px-24 py-1 text-center rounded-md  mx-auto bg-goldish'>Sign in</a>
+                    <p className='text-xs leading-tight text-black'>New Customer?<span className='text-xs hover:underline text-blue-700'>Start Here.</span></p>
                   </div>
 
                   <div className='wrapper flex mt-2'>
