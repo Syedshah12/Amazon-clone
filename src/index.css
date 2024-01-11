@@ -23,3 +23,12 @@
       background: #888888;
   }
 }
+
+
+@layer utilities {
+  .scrollbar2::-webkit-scrollbar {
+    width:0px;
+    height: 0px;
+  }
+
+}

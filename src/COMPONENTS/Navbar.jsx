@@ -380,12 +380,12 @@ const Navbar = () => {
         </div>
 
 
-        <div className='flex sm:hidden w-screen  items-center bg-light-bluish '>
-          <div className='  h-[40px] w-[95%] mx-auto   flex items-center   rounded-md   bg-white'>
+        <div className='flex sm:hidden  overflow-hidden  items-center bg-light-bluish '>
+          <div className='  h-[40px] w-[100%]  xs:w-[100%] mx-auto xs:mx-0   flex items-center  overflow-hidden  rounded-md   bg-white'>
 
-            <input type="text" placeholder='Search Amazon' className='focus:outline-none py-2 px-4 mx-auto  w-[84%] ' />
-            <div className='w-[10%] cursor-pointer hover:bg-dark-orangish  bg-light-orangish flex items-center justify-center rounded-md h-full'>
-              <IoSearch size={25} />
+            <input type="text" placeholder='Search Amazon' className='focus:outline-none py-2 px-1 xs:px-4  mx-auto   w-[90%] xs:w-[84%]  ' />
+            <div className=' w-[10%] cursor-pointer hover:bg-dark-orangish  bg-light-orangish flex items-center justify-center rounded-md h-full'>
+              <IoSearch  size={25} />
             </div>
           </div>
         </div>
@@ -393,7 +393,7 @@ const Navbar = () => {
 
 
 
-        <div className='bg-light-bluish flex relative  items-center px-2   h-12'>
+        <div className='bg-light-bluish flex relative overflow-hidden items-center px-2   h-12'>
           <div className='ml-3'><HiBars3 size={25} color='white' /></div>
           <ul className='flex items-center p-1  gap-6'>
             <li className='text-sm font-semibold text-white'>All</li>
