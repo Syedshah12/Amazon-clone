@@ -1,3 +1,4 @@
+import Footer from './COMPONENTS/Footer';
 import ProductViewer from './COMPONENTS/ProductViewer';
 import Signin from './COMPONENTS/Signin'
 import SlideScroll2 from './COMPONENTS/SlideScroll2';
