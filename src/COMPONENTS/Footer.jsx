@@ -459,7 +459,7 @@ United States
 
 
 <div className='hover:underline cursor-pointer '>
-<a className='font-semibold text-white text-xs leading-tight' href="">Amazon music</a><br />
+<a className='font-semibold  text-white text-xs leading-tight' href="">Amazon music</a><br />
 <span className='hover:underline cursor-pointer    text-[12px] text-wrap text-white'>Stream million <br /> of songs</span>
 </div>
 
