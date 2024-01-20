@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     extend: {
+      
       colors:{
         'goldish':"#FFD814",
         'dark':"#F7CA00",
@@ -18,7 +19,8 @@ export default {
          "light-bluish" :"#232F3E",
          "light-gray":"#E3E6E6",
          "red_darkish":"#CC0C39",
-         "light-goldish":"#FFC73B"
+         "light-goldish":"#FFC73B",
+         "orangish_2":"#FFA41C"
       }
     },
     screens: {

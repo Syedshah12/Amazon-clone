@@ -12,7 +12,7 @@ const Detail = () => {
 
 
     return (
-  <div className="w-full h-screen overflow-hidden ">
+  <div className="w-full h-screen  ">
     <Navbar/>
 <div className="flex justify-center py-0 sm:py-8  gap-4 w-full">
     {/* for image left flex div */}
@@ -70,8 +70,8 @@ const Detail = () => {
 </div>
 {/* left div */}
 <div className='w-[20%] mr-2'>
-<div className='w-full  rounded-md ring-1'>
-    <div className='flex flex-col  px-2 gap-y-2 w-full'>
+<div className='w-full  rounded-md ring-slate-300/90 ring-1 p-1 '>
+    <div className='flex flex-col   px-2 gap-y-2 w-full'>
         <div className='px-2'>
         <p className='text-2xl leading-relaxed font-md'>$10.27<span className='text-xs font-semibold leading-[1rem]'>	&#40;  $0.21 / Count &#41;</span></p>
         </div>
@@ -101,14 +101,47 @@ Delivery <span className='text-black font-bold'>Thursday, January 25.</span> Ord
 </div>
 
 
-<div className="px-2 flex flex-col w-full">
-    <div className='flex items-center flex-col w-full p-2 gap-y-2'>
-    <button className='py-[7px] text-sm leading-tight text-center rounded-full w-full bg-goldish'>Add to cart</button>
-<button className='py-[7px] text-sm text-center leading-tight  rounded-full w-full bg-orangish/80'>Buy Now</button>
+<div className="px-2 flex flex-col w-full ">
+    <div className='flex items-center flex-col w-full py-2 gap-y-2'>
+    <button className='py-[7px] text-sm leading-tight text-center rounded-full w-full bg-goldish/90 hover:bg-goldish'>Add to cart</button>
+<button className='py-[7px] text-sm text-center leading-tight  rounded-full w-full bg-orangish_2/95 hover:bg-orangish_2/100'>Buy Now</button>
     </div>
 
 </div>
 
+<div className="w-full flex flex-col gap-y-[2px] px-2">
+<div className="flex items-center">
+    <p className='text-slate-700 text-xs leading-tight w-[30%]'>Ships from</p>
+    <p className='ml-2 text-[12px]  leading-relaxed '>Amazon.com</p>
+</div>
+<div className="flex items-center">
+    <p className='text-slate-700 text-xs leading-tight w-[30%]'>Sold by</p>
+    <p className='ml-2 text-[12px]  leading-relaxed '>Amazon.com</p>
+</div>
+<div className="flex items-center">
+    <p className='text-slate-700 self-start text-xs leading-tight w-[30%]'>Returns</p>
+    <p className='ml-[31.5px] text-blue-600 text-[12px] font-[500] leading-relaxed '>
+Eligible for Return,<br /> Refund or Replacement within 30 days of receipt</p>
+</div>
+
+
+<div className="flex items-center">
+    <p className='text-slate-800 text-xs leading-tight w-[30%]'>Payment</p>
+    <p className='ml-[8px] text-[12px] text-blue-600 font-[500] cursor-pointer  leading-relaxed '>Secure transaction</p>
+</div>
+<div className="flex items-start mt-2">
+    <input className='self-start mt-1 ml-1' type="checkbox" name="" id="" />
+    <p className='ml-2 text-sm  font-medium]'>Add a gift receipt for easy returns</p>
+    
+</div>
+<hr className='mt-2 ' />
+<div className="w-full mb-[13px]  ">
+        <button className='w-full py-[4px] cursor-pointer text-[14px] text-gray-800 px-4 bg-transparent border-gray-600 flex font-[400]  border rounded-md'>
+            Add to list
+        </button>
+   
+</div>
+</div>
 
     </div>
 
