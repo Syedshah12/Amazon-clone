@@ -20,7 +20,8 @@ export default {
          "light-gray":"#E3E6E6",
          "red_darkish":"#CC0C39",
          "light-goldish":"#FFC73B",
-         "orangish_2":"#FFA41C"
+         "orangish_2":"#FFA41C",
+         "light-green":"#7FDA69"
       }
     },
     screens: {
