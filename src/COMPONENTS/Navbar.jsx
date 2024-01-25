@@ -6,12 +6,14 @@ import { BiSolidUpArrow } from "react-icons/bi";
 import { BsCart } from "react-icons/bs";
 import { VscAccount } from "react-icons/vsc";
 import { IoHomeOutline } from "react-icons/io5";
+
 import { CiGlobe } from "react-icons/ci";
 import { RxCross1 } from "react-icons/rx";
 import Usflag from '../assets/USFlag.png'
 import { HiBars3 } from "react-icons/hi2";
 import { CiLocationOn } from "react-icons/ci";
 import { IoSearch } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isShown, setIsShown] = useState(false);
@@ -288,10 +290,10 @@ const Navbar = () => {
 </div> */}
 
 
-          <div className='hidden   h-12 sm:flex items-center border border-transparent   hover:border-white cursor-pointer'>
+          <Link to='/cart' className='hidden   h-12 sm:flex items-center border border-transparent   hover:border-white cursor-pointer'>
             <BsCart color='white' size={30} />
             <h3 className=' text-md leading-tight font-md text-white'>Cart</h3>
-          </div>
+          </Link>
 
           {/* Sidebar */}
           <aside className={`${showSidebar} z-50 h-[720px]   w-96 absolute inset-0 bg-white`} >

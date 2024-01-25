@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 import headphone from '../assets/cardPics/headphone.jpg'
+import { FaAngleRight } from "react-icons/fa6";
 import { Book1,Book2,Book3,Book4,Book5,Book6,Book7,Book8,Book9,Book10,Book11,Book12 } from '../Imports/books_Pics_.js';
-
+import { FaAngleLeft } from "react-icons/fa6";
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa6";
 const SlideScroll2 = (props) => {
@@ -182,8 +183,8 @@ const SlideScroll2 = (props) => {
 
 </div>
 
-<div onClick={moveLeft} className='absolute -left-3 top-36 cursor-pointer'><FaChevronLeft color='black' size={80} /></div>
-<div onClick={moveRight} className='absolute right-0 top-36 cursor-pointer'><FaChevronRight color='black' size={80} /></div>
+<div onClick={moveLeft} className='absolute left-3 top-36 cursor-pointer'><FaAngleLeft color='black' size={50} /></div>
+<div onClick={moveRight} className='absolute right-3 top-36 cursor-pointer'><FaAngleRight color='black' size={50} /></div>
 
 </div>
   )

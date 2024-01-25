@@ -155,8 +155,8 @@ const SliderScroll3 = (props) => {
     
     </div>
     
-    <div onClick={moveLeft} className='absolute -left-3 top-36 cursor-pointer'><FaChevronLeft color='black' size={80} /></div>
-    <div onClick={moveRight} className='absolute right-0 top-36 cursor-pointer'><FaChevronRight color='black' size={80} /></div>
+    <div onClick={moveLeft} className='absolute left-3 top-36 cursor-pointer'><FaChevronLeft color='black' size={40} /></div>
+    <div onClick={moveRight} className='absolute right-3 top-[152px] cursor-pointer'><FaChevronRight color='black' size={40} /></div>
     
     </div>
   )

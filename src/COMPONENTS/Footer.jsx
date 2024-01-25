@@ -6,14 +6,25 @@ import { BiSolidUpArrow } from "react-icons/bi";
 
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Smooth scrolling behavior
+    });
+  };
+
+
+
+
+  
     const [isShownSecond, setIsShownSecond] = useState(false);
       return (
 <section>
 <div className="main">
 <div className="upFooter">
 <div className="wrapper flex flex-col">
-<div className='backToTop w-screen h-12 '>
-    <div className='px-3 h-full w-full text-center flex items-center bg-light-bluish/95 hover:bg-light-bluish/90 cursor-pointer  justify-center hover: text-white'>
+<div className='backToTop  h-12 '>
+    <div onClick={scrollToTop} className='px-3 h-full w-full text-center flex items-center bg-light-bluish/95 hover:bg-light-bluish/90 cursor-pointer  justify-center hover: text-white'>
      Back to top
     </div>
     </div>    
@@ -23,7 +34,7 @@ const Footer = () => {
 
 
 <div className='flex flex-col'>
-<ul className='flex flex-col gap-4 items-center justify-center text-white'>
+<ul className='flex flex-col gap-2 items-start sm:items-center  justify-center  text-white'>
     <li className='font-semibold'>Get To Know US</li>
     <li className='text-white text-sm leading-tight cursor-pointer hover:underline'>Careers</li>
     <li className='text-white text-sm leading-tight cursor-pointer hover:underline'>Blogs</li>
@@ -39,7 +50,7 @@ const Footer = () => {
 
 
 <div className='flex flex-col'>
-<ul className='flex flex-col gap-4 items-center justify-center text-white'>
+<ul className='flex flex-col gap-2 items-start sm:items-center justify-center text-white'>
     <li className='font-semibold'>Make Money With Us</li>
     <li className='text-white text-sm leading-tight cursor-pointer hover:underline'>Sell Products on Amazon</li>
     <li className='text-white text-sm leading-tight cursor-pointer hover:underline'>Sell apps on Amazon</li>
@@ -58,7 +69,7 @@ const Footer = () => {
 
 
 <div className=' flex-col hidden sm:flex '>
-<ul className='flex flex-col gap-4 items-center justify-center text-white'>
+<ul className='flex flex-col gap-2 items-center justify-center text-white'>
     <li className='font-semibold'>Amazon Payment Products</li>
     <li className='text-white text-sm leading-tight cursor-pointer hover:underline'>Amazon Business Card</li>
     <li className='text-white text-sm leading-tight cursor-pointer hover:underline'>Shop with Points</li>
@@ -77,7 +88,7 @@ const Footer = () => {
 
 
 <div className=' flex-col hidden sm:flex '>
-<ul className='flex flex-col gap-4 items-center justify-center text-white'>
+<ul className='flex flex-col gap-2 items-center justify-center text-white'>
     <li className='font-semibold'>Let Us Help You</li>
     <li className='text-white text-sm leading-tight cursor-pointer hover:underline'>Amazon and COVID-19</li>
     <li className='text-white text-sm leading-tight cursor-pointer hover:underline'>Your Account</li>
@@ -133,7 +144,7 @@ English
 
 
 
-    <div className='flex items-center justify-center mt-2 gap-4'>
+    <div className='flex items-center justify-center mt-2 gap-2'>
       <p className='text-sm text-black' >Change Language</p>
       <a className='text-xs leading-tight text-blue-700' href="">Learn More</a>
     </div>
@@ -297,7 +308,7 @@ United States
  items-start justify-center px-8 py-8 sm:flex">
 
 {/* First col */}
-<div className="col1 flex  flex-col  gap-4 justify-start">
+<div className="col1 flex  flex-col  gap-2 justify-start">
 <div className='hover:underline cursor-pointer  '>
 <a className='font-semibold text-white text-xs leading-tight' href="">Amazon music</a><br />
 <span className='hover:underline cursor-pointer    text-[12px] text-wrap text-white'>Stream million <br /> of songs</span>
@@ -327,46 +338,7 @@ United States
 
 
 
-<div className="col1 flex  flex-col  gap-4 justify-start">
-<div className='hover:underline cursor-pointer  '>
-<a className='font-semibold text-white text-xs leading-tight' href="">Amazon music</a><br />
-<span className='hover:underline cursor-pointer    text-[12px] text-wrap text-white'>Stream million <br /> of songs</span>
-</div>
-
-
-<div className='hover:underline cursor-pointer '>
-<a className='font-semibold text-white text-xs leading-tight' href="">Amazon music</a><br />
-<span className='hover:underline cursor-pointer    text-[12px] text-wrap text-white'>Stream million <br /> of songs</span>
-</div>
-
-
-
-<div className='hover:underline cursor-pointer '>
-<a className='font-semibold text-white text-xs leading-tight' href="">Amazon music</a><br />
-<span className='hover:underline cursor-pointer    text-[12px] text-wrap text-white'>Stream million <br /> of songs</span>
-</div>
-
-
-
-
-<div className='hover:underline cursor-pointer '>
-<a className='font-semibold text-white text-xs leading-tight' href="">Amazon music</a><br />
-<span className='hover:underline cursor-pointer    text-[12px] text-wrap text-white'>Stream million <br /> of songs</span>
-</div>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-<div className="col1 flex  flex-col  gap-4 justify-start">
+<div className="col1 flex  flex-col  gap-2 justify-start">
 <div className='hover:underline cursor-pointer  '>
 <a className='font-semibold text-white text-xs leading-tight' href="">Amazon music</a><br />
 <span className='hover:underline cursor-pointer    text-[12px] text-wrap text-white'>Stream million <br /> of songs</span>
@@ -405,7 +377,7 @@ United States
 
 
 
-<div className="col1 flex  flex-col  gap-4 justify-start">
+<div className="col1 flex  flex-col  gap-2 justify-start">
 <div className='hover:underline cursor-pointer  '>
 <a className='font-semibold text-white text-xs leading-tight' href="">Amazon music</a><br />
 <span className='hover:underline cursor-pointer    text-[12px] text-wrap text-white'>Stream million <br /> of songs</span>
@@ -444,7 +416,46 @@ United States
 
 
 
-<div className="col1 flex  flex-col  gap-4 justify-start">
+<div className="col1 flex  flex-col  gap-2 justify-start">
+<div className='hover:underline cursor-pointer  '>
+<a className='font-semibold text-white text-xs leading-tight' href="">Amazon music</a><br />
+<span className='hover:underline cursor-pointer    text-[12px] text-wrap text-white'>Stream million <br /> of songs</span>
+</div>
+
+
+<div className='hover:underline cursor-pointer '>
+<a className='font-semibold text-white text-xs leading-tight' href="">Amazon music</a><br />
+<span className='hover:underline cursor-pointer    text-[12px] text-wrap text-white'>Stream million <br /> of songs</span>
+</div>
+
+
+
+<div className='hover:underline cursor-pointer '>
+<a className='font-semibold text-white text-xs leading-tight' href="">Amazon music</a><br />
+<span className='hover:underline cursor-pointer    text-[12px] text-wrap text-white'>Stream million <br /> of songs</span>
+</div>
+
+
+
+
+<div className='hover:underline cursor-pointer '>
+<a className='font-semibold text-white text-xs leading-tight' href="">Amazon music</a><br />
+<span className='hover:underline cursor-pointer    text-[12px] text-wrap text-white'>Stream million <br /> of songs</span>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div className="col1 flex  flex-col  gap-2 justify-start">
 <div className='hover:underline cursor-pointer  '>
 <a className='font-semibold text-white text-xs leading-tight' href="">Amazon music</a><br />
 <span className='hover:underline cursor-pointer    text-[12px] text-wrap text-white'>Stream million <br /> of songs</span>

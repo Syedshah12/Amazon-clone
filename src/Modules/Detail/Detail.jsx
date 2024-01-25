@@ -5,9 +5,12 @@ import pic2 from '../../assets/MakeUp/MakeUp2.jpg'
 import pic3 from '../../assets/MakeUp/MakeUp3.jpg'
 import pic4 from '../../assets/MakeUp/MakeUp5.jpg'
 import { IoLocationOutline } from "react-icons/io5";
+
 import { CiStar } from "react-icons/ci";
 import Navbar from '../../COMPONENTS/Navbar'
 import ProductViewer from '../../COMPONENTS/ProductViewer';
+import Reviews from '../../COMPONENTS/Reviews';
+import Footer from '../../COMPONENTS/Footer';
 
 
 const Detail = () => {
@@ -233,8 +236,80 @@ Eligible for Return,<br /> Refund or Replacement within 30 days of receipt</p>
 </div>
   </div>
   <hr className='mt-2 h-px  bg-gray-300 border-0 ' />
-  <ProductViewer/>
 
+
+<section className='p-details'>
+    {/* product details */}
+<div className=' p-1'>
+<div className='text-black text-xl font-bold'><h1>Product Description</h1></div>
+<div className='text-sm leading-3 py-2 px-1 sm:px-2 '><p className='ml-4'>Includes 12 Huge Rolls &#40;2 Packs of 6 Huge Rolls&#41; of 158 2-ply sheets per roll, 12 Huge Rolls = 38 Regular Rolls &#40; based on a regular roll with 49 sheets&#41;</p></div>
+</div>
+<hr className='mt-2 h-px  bg-gray-300 border-0 ' />
+{/* product desc */}
+<div className='p-0 w-full sm:w-auto py-1 px-1  sm:px-2'>
+<div className='text-slate-950 text-2xl font-[700]'><h1>Product Description</h1></div>
+<div className="flex flex-col px-0 sm:px-4 py-1 sm:py-2 gap-3">
+    <div className="flex text-sm"><span className='font-[700] text-sm'>Product Dimension : </span>10.8 x 5.4 x 11 inches; 8.48 Pounds</div>
+    <div className="flex text-sm"><span className='font-[700] text-sm'>Item model number  :  </span> 10007482</div>
+    <div className="flex text-sm"><span className='font-[700] text-sm'>Date First Available  :</span>November 16, 2017</div>
+    <div className="flex text-sm"><span className='font-[700] text-sm'>ASIN  : </span>  B074CR89QG</div>
+    <div className="flex text-sm"><span className='font-[700] text-sm'>Country of Origin : </span>USA</div>
+    <div className="flex text-sm"><span className='font-[700] text-sm'>Best Sellers Rank: </span>#17 in Health & Household</div>
+
+</div>
+</div>
+
+
+</section>
+
+<hr className='mt-2 h-px  bg-gray-300 border-0 ' />
+<section className='reviews-section'> 
+<div className="main">
+<div>
+    <h1 className='text-2xl sm:text-4xl font-bold leading-relaxed text-center'>Customer reviews</h1>
+</div>
+<div>
+<div className='text-2xl ml-4 font-semibold p-4'><h1>Top reviews from the United States</h1></div>
+
+
+<div className='w-full flex gap-y-4 flex-col p-1     sm:p-2 items-center'>
+<Reviews/>
+<Reviews/>
+<Reviews/>
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+{/* review section */}
+
+
+
+
+
+  <ProductViewer/>
+<Footer/>
  
   </>
   )

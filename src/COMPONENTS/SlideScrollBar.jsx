@@ -1,4 +1,5 @@
-
+import { FaAngleRight } from "react-icons/fa6";
+import { FaAngleLeft } from "react-icons/fa6";
 import React, { useRef } from 'react';
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa6";
@@ -57,8 +58,6 @@ const SlideScrollBar = (props) => {
 </div>
 <div className='flex items-center text-xs font-semibold leading-tight'>Corsair Dark Core RGB Pro SE, FPS/M…</div>
 </div>
-<div onClick={moveLeft} className='absolute -left-3 top-36 cursor-pointer'><FaChevronLeft color='black' size={80} /></div>
-<div onClick={moveRight} className='absolute right-0 top-36 cursor-pointer'><FaChevronRight color='black' size={80} /></div>
 </div>
 
 <div className='inline-block card'>
@@ -76,8 +75,6 @@ const SlideScrollBar = (props) => {
 </div>
 <div className='flex items-center text-xs font-semibold leading-tight'>Corsair Dark Core RGB Pro SE, FPS/M…</div>
 </div>
-<div onClick={moveLeft} className='absolute -left-3 top-36 cursor-pointer'><FaChevronLeft color='black' size={80} /></div>
-<div onClick={moveRight} className='absolute right-0 top-36 cursor-pointer'><FaChevronRight color='black' size={80} /></div>
 </div>
 
 
@@ -97,8 +94,6 @@ const SlideScrollBar = (props) => {
 </div>
 <div className='flex items-center text-xs font-semibold leading-tight'>Corsair Dark Core RGB Pro SE, FPS/M…</div>
 </div>
-<div onClick={moveLeft} className='absolute -left-3 top-36 cursor-pointer'><FaChevronLeft color='black' size={80} /></div>
-<div onClick={moveRight} className='absolute right-0 top-36 cursor-pointer'><FaChevronRight color='black' size={80} /></div>
 </div>
 
 
@@ -118,8 +113,6 @@ const SlideScrollBar = (props) => {
 </div>
 <div className='flex items-center text-xs font-semibold leading-tight'>Corsair Dark Core RGB Pro SE, FPS/M…</div>
 </div>
-<div onClick={moveLeft} className='absolute -left-3 top-36 cursor-pointer'><FaChevronLeft color='black' size={80} /></div>
-<div onClick={moveRight} className='absolute right-0 top-36 cursor-pointer'><FaChevronRight color='black' size={80} /></div>
 </div>
 
 
@@ -142,8 +135,6 @@ const SlideScrollBar = (props) => {
 </div>
 <div className='flex items-center text-xs font-semibold leading-tight'>Corsair Dark Core RGB Pro SE, FPS/M…</div>
 </div>
-<div onClick={moveLeft} className='absolute -left-3 top-36 cursor-pointer'><FaChevronLeft color='black' size={80} /></div>
-<div onClick={moveRight} className='absolute right-0 top-36 cursor-pointer'><FaChevronRight color='black' size={80} /></div>
 </div>
 
 
@@ -166,8 +157,6 @@ const SlideScrollBar = (props) => {
 </div>
 <div className='flex items-center text-xs font-semibold leading-tight'>Corsair Dark Core RGB Pro SE, FPS/M…</div>
 </div>
-<div onClick={moveLeft} className='absolute -left-3 top-36 cursor-pointer'><FaChevronLeft color='black' size={80} /></div>
-<div onClick={moveRight} className='absolute right-0 top-36 cursor-pointer'><FaChevronRight color='black' size={80} /></div>
 </div>
 
 
@@ -187,8 +176,6 @@ const SlideScrollBar = (props) => {
 </div>
 <div className='flex items-center text-xs font-semibold leading-tight'>Corsair Dark Core RGB Pro SE, FPS/M…</div>
 </div>
-<div onClick={moveLeft} className='absolute -left-3 top-36 cursor-pointer'><FaChevronLeft color='black' size={80} /></div>
-<div onClick={moveRight} className='absolute right-0 top-36 cursor-pointer'><FaChevronRight color='black' size={80} /></div>
 </div>
 
 
@@ -212,8 +199,6 @@ const SlideScrollBar = (props) => {
 </div>
 <div className='flex items-center text-xs font-semibold leading-tight'>Corsair Dark Core RGB Pro SE, FPS/M…</div>
 </div>
-<div onClick={moveLeft} className='absolute -left-3 top-36 cursor-pointer'><FaChevronLeft color='black' size={80} /></div>
-<div onClick={moveRight} className='absolute right-0 top-36 cursor-pointer'><FaChevronRight color='black' size={80} /></div>
 </div>
 
 
@@ -236,8 +221,6 @@ const SlideScrollBar = (props) => {
 </div>
 <div className='flex items-center text-xs font-semibold leading-tight'>Corsair Dark Core RGB Pro SE, FPS/M…</div>
 </div>
-<div onClick={moveLeft} className='absolute -left-3 top-36 cursor-pointer'><FaChevronLeft color='black' size={80} /></div>
-<div onClick={moveRight} className='absolute right-0 top-36 cursor-pointer'><FaChevronRight color='black' size={80} /></div>
 </div>
 
 
@@ -260,8 +243,6 @@ const SlideScrollBar = (props) => {
 </div>
 <div className='flex items-center text-xs font-semibold leading-tight'>Corsair Dark Core RGB Pro SE, FPS/M…</div>
 </div>
-<div onClick={moveLeft} className='absolute -left-3 top-36 cursor-pointer'><FaChevronLeft color='black' size={80} /></div>
-<div onClick={moveRight} className='absolute right-0 top-36 cursor-pointer'><FaChevronRight color='black' size={80} /></div>
 </div>
 
 
@@ -284,8 +265,6 @@ const SlideScrollBar = (props) => {
 </div>
 <div className='flex items-center text-xs font-semibold leading-tight'>Corsair Dark Core RGB Pro SE, FPS/M…</div>
 </div>
-<div onClick={moveLeft} className='absolute -left-3 top-36 cursor-pointer'><FaChevronLeft color='black' size={80} /></div>
-<div onClick={moveRight} className='absolute right-0 top-36 cursor-pointer'><FaChevronRight color='black' size={80} /></div>
 </div>
 
 
@@ -309,8 +288,6 @@ const SlideScrollBar = (props) => {
 </div>
 <div className='flex items-center text-xs font-semibold leading-tight'>Corsair Dark Core RGB Pro SE, FPS/M…</div>
 </div>
-<div onClick={moveLeft} className='absolute -left-3 top-36 cursor-pointer'><FaChevronLeft color='black' size={80} /></div>
-<div onClick={moveRight} className='absolute right-0 top-36 cursor-pointer'><FaChevronRight color='black' size={80} /></div>
 </div>
 
 
@@ -330,8 +307,6 @@ const SlideScrollBar = (props) => {
 </div>
 <div className='flex items-center text-xs font-semibold leading-tight'>Corsair Dark Core RGB Pro SE, FPS/M…</div>
 </div>
-<div onClick={moveLeft} className='absolute -left-3 top-36 cursor-pointer'><FaChevronLeft color='black' size={80} /></div>
-<div onClick={moveRight} className='absolute right-0 top-36 cursor-pointer'><FaChevronRight color='black' size={80} /></div>
 </div>
 
 
@@ -354,14 +329,14 @@ const SlideScrollBar = (props) => {
 </div>
 <div className='flex items-center text-xs font-semibold leading-tight'>Corsair Dark Core RGB Pro SE, FPS/M…</div>
 </div>
-<div onClick={moveLeft} className=' absolute bg-transparent -left-3 top-36 cursor-pointer'><FaChevronLeft color='black' size={80} /></div>
-<div onClick={moveRight} className=' absolute  bg-transparent right-0 top-36 cursor-pointer'><FaChevronRight color='black' size={80} /></div>
 </div>
 
 
 
 
 
+<div onClick={moveLeft} className='absolute left-3 top-36 cursor-pointer'><FaAngleLeft color='black' size={50} /></div>
+<div onClick={moveRight} className='absolute right-3 top-36 cursor-pointer'><FaAngleRight color='black' size={50} /></div>
 
 
 
