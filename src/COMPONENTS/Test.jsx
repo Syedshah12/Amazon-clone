@@ -23,6 +23,50 @@ import SlideScrollBar from './SlideScrollBar'
 import SlideScroll2 from './SlideScroll2'
 import ProductViewer from './ProductViewer.jsx'
 
+const data = [
+    {
+        id: 1,
+        src1: keyboard,
+        src2: headphone,
+        src3: chairs,
+        src4: Computer,
+    },
+ 
+  
+    {
+        id: 2,
+        src1: keyboard,
+        src2: headphone,
+        src3: chairs,
+        src4: Computer,
+    },
+ 
+  
+    {
+        id: 3,
+        src1: keyboard,
+        src2: headphone,
+        src3: chairs,
+        src4: Computer,
+    },
+ 
+    {
+        id: 3,
+        src1: keyboard,
+        src2: headphone,
+        src3: chairs,
+        src4: Computer,
+    },
+ 
+  
+]
+
+
+
+
+
+
+
 const obj ={first:dining,second:kitchen,third:home,fourth:health};
 const obj2 ={first:keyboard,second:headphone,third:chairs,fourth:Computer};
 const slides=[one,two,three,four];
@@ -47,6 +91,21 @@ const Test = () => {
 
 </div>
  <div className=' mt-8  bg-gradient-to-b from-transparent via-slate-200 to-light-gray  grid gap-4 px-4 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 '>
+
+
+
+{data.map(({id,src1,src2,src3,src4})=>(
+
+
+<Card  id={id} src1={src1} src2={src2} src3={src3} src4={src4}  />
+))} 
+
+
+
+
+
+{/* 
+
 <Card {...obj2} />
 <Card2 src={cpu}/>
 <Card2 src={stuftoys}/>
@@ -55,6 +114,11 @@ const Test = () => {
 <Card {...obj2} />
 <Card2 src={stuftoys}/>
 <Card2 src={cpu}/>
+
+ */}
+
+
+
 
  </div>
     </div>

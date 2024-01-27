@@ -7,6 +7,60 @@ import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa6";
 
 
+const data = [
+    {
+        id: 1,
+        src: MakeUp1
+    },
+    {
+        id: 2,
+        src: MakeUp2
+    },
+    {
+        id: 3,
+        src: MakeUp3
+    },
+    {
+        id: 4,
+        src: MakeUp5
+    },
+    {
+        id: 5,
+        src:MakeUp6
+    },
+    {
+        id: 6,
+        src: MakeUp7
+    },
+    {
+        id: 7,
+        src: MakeUp8
+    },
+    {
+        id: 8,
+        src: MakeUp9
+    },
+    {
+        id: 9,
+        src:MakeUp10
+    },
+    {
+        id: 10,
+        src: MakeUp11
+    },
+    {
+        id: 11,
+        src: MakeUp12
+    },
+    
+]
+
+
+
+
+
+
+
 
 const SliderScroll3 = (props) => {
     const containerRef = useRef(null);
@@ -28,7 +82,7 @@ const SliderScroll3 = (props) => {
 
 
   return (
-    <div className='main px-3 mt-auto py-6 flex flex-col bg-white  relative gap-3 '>
+    <div className='main transition-all duration-300 ease-in-out px-3 mt-auto py-6 flex flex-col bg-white  relative gap-3 '>
     <div className='w-full flex overflow-hidden items-center  whitespace-nowrap'>
         <div className='text-xl md:text-2xl inline-block  font-bold text-black leading-relaxed'>{props.title}</div>
         <div className= 'inline-block text-blue-700 ml-2 mt-1'>Explore All deals</div>
@@ -37,116 +91,28 @@ const SliderScroll3 = (props) => {
     
     
     
-    
-    {/* card starts here */}
-    <div className='inline-block card -mt-4 ml-3'>
-    <div className='h-52 w-44 inline-block'>
-        <img className='h-full  w-full object-fit' src={MakeUp1} alt="" />
-    </div>
-    
-    </div>
-    
-  
-    
-    
-    <div className='inline-block card -mt-4 ml-3'>
-    <div className='h-52 w-44 inline-block'>
-        <img className='h-full  w-full object-fit' src={MakeUp2} alt="" />
-    </div>
-    
-    </div>
+    {data.map(({id,src})=>(
+
+<div key={id} className='inline-block card -mt-4 ml-3'>
+<div className='h-52 w-44 inline-block'>
+    <img className='h-full  w-full object-fit' src={src} alt="" />
+</div>
+
+</div>
+
+
+
+
+
+
+    ))}
+   
     
   
     
     
-    <div className='inline-block card -mt-4 ml-3'>
-    <div className='h-52 w-44 inline-block'>
-        <img className='h-full  w-full object-fit' src={MakeUp3} alt="" />
-    </div>
+   
     
-    </div>
-    
-  
-    
-    
-    <div className='inline-block card -mt-4 ml-3'>
-    <div className='h-52 w-44 inline-block'>
-        <img className='h-full  w-full object-fit' src={MakeUp5} alt="" />
-    </div>
-    
-    </div>
-    
-  
-    
-    
-    <div className='inline-block card -mt-4 ml-3'>
-    <div className='h-52 w-44 inline-block'>
-        <img className='h-full  w-full object-fit' src={MakeUp6} alt="" />
-    </div>
-    
-    </div>
-    
-  
-    
-    
-    <div className='inline-block card -mt-4 ml-3'>
-    <div className='h-52 w-44 inline-block'>
-        <img className='h-full  w-full object-fit' src={MakeUp7} alt="" />
-    </div>
-    
-    </div>
-    
-  
-    
-    
-    <div className='inline-block card -mt-4 ml-3'>
-    <div className='h-52 w-44 inline-block'>
-        <img className='h-full  w-full object-fit' src={MakeUp8} alt="" />
-    </div>
-    
-    </div>
-    
-  
-    
-    
-    <div className='inline-block card -mt-4 ml-3'>
-    <div className='h-52 w-44 inline-block'>
-        <img className='h-full  w-full object-fit' src={MakeUp9} alt="" />
-    </div>
-    
-    </div>
-    
-  
-    
-    
-    <div className='inline-block card -mt-4 ml-3'>
-    <div className='h-52 w-44 inline-block'>
-        <img className='h-full  w-full object-fit' src={MakeUp10} alt="" />
-    </div>
-    
-    </div>
-    
-  
-    
-    
-    <div className='inline-block card -mt-4 ml-3'>
-    <div className='h-52 w-44 inline-block'>
-        <img className='h-full  w-full object-fit' src={MakeUp11} alt="" />
-    </div>
-    
-    </div>
-    
-  
-    
-    
-    <div className='inline-block card -mt-4 ml-3'>
-    <div className='h-52 w-44 inline-block'>
-        <img className='h-full  w-full object-fit' src={MakeUp12} alt="" />
-    </div>
-    
-    </div>
-    
-  
     
   
 

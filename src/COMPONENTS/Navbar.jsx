@@ -6,6 +6,7 @@ import { BiSolidUpArrow } from "react-icons/bi";
 import { BsCart } from "react-icons/bs";
 import { VscAccount } from "react-icons/vsc";
 import { IoHomeOutline } from "react-icons/io5";
+import {motion} from 'framer-motion'
 
 import { CiGlobe } from "react-icons/ci";
 import { RxCross1 } from "react-icons/rx";
@@ -17,16 +18,42 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isShown, setIsShown] = useState(false);
-  const [showSidebar, setShowSidebar] = useState('hidden')
+  const [showSidebar, setShowSidebar] = useState(false)
   const [isShownSecond, setIsShownSecond] = useState(false);
 
-  const showSidebarFunc = () => {
-    if (showSidebar === 'hidden') {
-      setShowSidebar('block')
-    } else {
-      setShowSidebar('hidden')
+  const container = {
+    hidden: { x:0 },
+    show: {
+    x:384
     }
   }
+
+
+
+
+
+ const showSidebarFunc = () => {
+    if (showSidebar === false) {
+      setShowSidebar(true)
+    
+    } else {
+      setShowSidebar(false)
+ 
+    }
+  }
+
+
+
+
+
+  
+  // const showSidebarFunc = () => {
+  //   if (showSidebar === 'hidden') {
+  //     setShowSidebar('block')
+  //   } else {
+  //     setShowSidebar('hidden')
+  //   }
+  // }
   return (
     <section className='h-[102px] '>
       <nav>
@@ -296,7 +323,7 @@ const Navbar = () => {
           </Link>
 
           {/* Sidebar */}
-          <aside className={`${showSidebar} z-50 h-[720px]   w-96 absolute inset-0 bg-white`} >
+          <motion.aside  transition={{duration:0.7,ease:'easeInOut'}} variants={container} initial='hidden'  animate={showSidebar ? "show" : "hidden"} className={` -left-96 z-50 h-[720px]   w-96 absolute inset-0 bg-white`} >
             <div className="top h-40 bg-darkBlusish">
               <div className='flex h-[60%] w-full justify-end items-start'>
                 <div className='flex items-center mt-4'>
@@ -375,7 +402,7 @@ const Navbar = () => {
 
 
 
-          </aside>
+          </motion.aside>
 
 
 
