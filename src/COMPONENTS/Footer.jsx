@@ -6,16 +6,13 @@ import { BiSolidUpArrow } from "react-icons/bi";
 
 
 const Footer = () => {
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth' // Smooth scrolling behavior
+      behavior: 'smooth' 
     });
   };
-
-
-
-
   
     const [isShownSecond, setIsShownSecond] = useState(false);
       return (

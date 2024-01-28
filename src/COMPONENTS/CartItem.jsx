@@ -1,10 +1,10 @@
 import React from 'react'
 import pic from '../assets/Books/Book1.jpg'
 
-const CartItem = () => {
+const CartItem = ({id,stock,title,image,prize}) => {
   return (
 <>
-<div className="flex flex-col items-center sm:items-start sm:flex-row ml-4 gap-4  p-4">
+<div key={id} className="flex flex-col items-center sm:items-start sm:flex-row ml-4 gap-4  p-4">
 
 
 
@@ -13,16 +13,16 @@ const CartItem = () => {
 
 
 <div className='w-40 sm:w-48  h-40 sm:h-48 px-4 sm:px-6'>
-  <img className='w-full object-contain h-full ' src={pic} alt="" />
+  <img className='w-full object-contain h-full ' src={image} alt="" />
 </div>
 
 
 <div className='w-2/3 flex flex-col '>
 <div className='py-4' >
-  <h1 className='text-xl font-[500] leading-none'>Pre-Med Track for 1st Graders: Anatomy: Skeletal System</h1>
+  <h1 className='text-xl font-[500] leading-none'>{title}</h1>
   <p className='text-sm leading-tight mt-2 text-slate-800'>by Dr. Dr. Tasha Taylor</p>
   <p className='text-sm leading-tight font-bold mt-2 text-slate-800'>Paperback</p>
-  <p className='text-xs leading-tight mt-2 text-green-800 font-semibold'>In Stock</p>
+  <p className='text-xs leading-tight mt-2 text-green-800 font-semibold'>{stock}</p>
   <div className='flex gap-2 mt-2'>
     <input type="checkbox" name="" id="" />
     <label className='text-xs font-[400] leading-tight' for="vehicle1">This is a gift</label>
@@ -46,7 +46,7 @@ const CartItem = () => {
 
 </div>
 
-<div className='flex justify-end flex-grow '><h2 className='font-semibold text-xl '>$98.18</h2></div>
+<div className='flex justify-end flex-grow '><h2 className='font-semibold text-xl '>{prize}</h2></div>
 
 </div>
 <hr className='mt-2 h-px  bg-gray-300 border-0 ' />

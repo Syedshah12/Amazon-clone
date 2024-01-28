@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../../COMPONENTS/Navbar'
-
+import Book1  from '../../assets/Books/Book1.jpg'
+import Book2  from '../../assets/Books/Book2.jpg'
 import CartItem from '../../COMPONENTS/CartItem'
 import SideCartItem from '../../COMPONENTS/SideCartItem'
 import SlideScrollBar from '../../COMPONENTS/SlideScrollBar'
@@ -9,6 +10,28 @@ import SliderScroll3 from '../../COMPONENTS/SliderScroll3'
 import Corousel from '../../COMPONENTS/Corousel'
 import ProductViewer from '../../COMPONENTS/ProductViewer'
 import Footer from '../../COMPONENTS/Footer'
+
+
+const data=[
+{
+  id:1,
+  title:"Twisted LOVE: Twisted Book one",
+  stock:'In Stock',
+  prize:"$98.18",
+  image:Book1
+},
+{
+  id:2,
+  title:"Liz Cheney OATH AND HONOR: A Warning",
+  stock:'Not in Stock',
+  prize:"$65",
+  image:Book2
+},
+
+
+]
+
+
 
 const Cart = () => {
   return (
@@ -29,8 +52,12 @@ const Cart = () => {
 
 
 
-< CartItem />
-< CartItem />
+{data.map(({id,title,stock,prize,image})=>(
+  < CartItem  id={id} title={title} stock={stock} prize={prize} image={image}  />
+
+
+
+))}
 
 
 

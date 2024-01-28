@@ -23,44 +23,39 @@ import SlideScrollBar from './SlideScrollBar'
 import SlideScroll2 from './SlideScroll2'
 import ProductViewer from './ProductViewer.jsx'
 
+
 const data = [
     {
         id: 1,
-        src1: keyboard,
-        src2: headphone,
-        src3: chairs,
-        src4: Computer,
+  images:[keyboard,headphone,Computer,chairs],
+  tags:["keyboard","Headphone","Computer","Chairs"],
+  title:"Gaming accessories"
     },
  
   
     {
         id: 2,
-        src1: keyboard,
-        src2: headphone,
-        src3: chairs,
-        src4: Computer,
-    },
- 
-  
-    {
-        id: 3,
-        src1: keyboard,
-        src2: headphone,
-        src3: chairs,
-        src4: Computer,
+  images:[stuftoys],
+  title:'Toy under $25'
     },
  
     {
         id: 3,
-        src1: keyboard,
-        src2: headphone,
-        src3: chairs,
-        src4: Computer,
+  images:[cpu],
+  title:"Deals in Pcs"
     },
  
+
+    {
+        id: 4,
+  images:[dining,home,kitchen,health],
+  tags:["Dining","Home","Kitchen","Health"],
+  title:'Refresh your Space'
+    },
+ 
+    
   
 ]
-
 
 
 
@@ -94,14 +89,28 @@ const Test = () => {
 
 
 
-{data.map(({id,src1,src2,src3,src4})=>(
 
-
-<Card  id={id} src1={src1} src2={src2} src3={src3} src4={src4}  />
-))} 
-
-
-
+ {data.map(item => {
+                if (item.images.length === 1) {
+                    return <Card2 id={item.id} title={item.title} src={item.images[0]} />;
+                } else if (item.images.length === 4) {
+                    return <Card id={item.id} title={item.title} src1={item.images[0]} src2={item.images[1]} src3={item.images[2]} src4={item.images[3]}
+                    
+                    tag1={item.tags[0]}
+                    tag2={item.tags[1]}
+                    tag3={item.tags[2]}
+                    tag4={item.tags[3]}
+                    
+                    
+                    
+                    
+                    
+                    />;
+                } else {
+                    // Handle other cases if needed
+                    return null;
+                }
+            })}
 
 
 {/* 
@@ -134,10 +143,10 @@ const Test = () => {
 
 <div className=' mt-8  bg-gradient-to-b from-transparent via-slate-200 to-light-gray  grid gap-4 px-4 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 '>
 
-<Card2 src={card17}/>
-<Card2 src={card18}/>
-<Card {...obj2} />
-<Card  {...obj} />
+<Card2 title={"Best Deals in Watches"} src={card17}/>
+<Card2 title={"Best GamingTech"}  src={card18}/>
+<Card id={90} title={'Furniture And Home'} src1={obj.first} src2={obj.second} src3={obj.third} src4={obj.fourth} />
+<Card  id={90} title={'Logitech Products'} src1={obj2.first} src2={obj2.second} src3={obj2.third} src4={obj2.fourth}  />
 
  </div>
 
