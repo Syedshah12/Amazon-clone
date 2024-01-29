@@ -1,5 +1,6 @@
 import { FaAngleRight } from "react-icons/fa6";
 import { FaAngleLeft } from "react-icons/fa6";
+
 import React, { useRef } from 'react';
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa6";
@@ -127,7 +128,7 @@ const SlideScrollBar = (props) => {
       <div ref={containerRef} className='overflow-auto  transition-all ease-in-out duration-500  whitespace-nowrap scrollbar'>
         {/* card starts here */}
         {data.map(({ id, src, prize, listprize, desc }) => (
-          <div key={id} className='inline-block card -mt-4'>
+          <div key={id} className='inline-block card -mt-4 transition-all ease-in-out duration-500'>
             <div className='flex flex-col w-64  py-6  px-3 '>
               <div className='mb-2'>
                 <img className='w-full h-full max-h-36 object-cover ' src={src} alt="" />

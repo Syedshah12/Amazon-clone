@@ -93,9 +93,9 @@ const SliderScroll3 = (props) => {
     
     {data.map(({id,src})=>(
 
-<div key={id} className='inline-block card -mt-4 ml-3'>
-<div className='h-52 w-44 inline-block'>
-    <img className='h-full  w-full object-fit' src={src} alt="" />
+<div key={id} className='inline-block card -mt-4 ml-3 '>
+<div className='h-52 w-36 inline-block '>
+    <img className='h-full  w-full object-contain transition-all ease-in-out duration-500' src={src} alt="" />
 </div>
 
 </div>
